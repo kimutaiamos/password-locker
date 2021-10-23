@@ -1,4 +1,4 @@
-from _typeshed import Self
+# from _typeshed import Self
 import pyperclip
 import random
 import string

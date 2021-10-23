@@ -1,3 +1,5 @@
+
+#! /usr/bin/env python3
 import pyperclip
 from user_credentials import User, Credential, save_credentials
 
@@ -105,7 +107,7 @@ def main():
 							elif psw_choice == 'EX':
 								break
 							else:
-								print('ERROR! wrong details entered.Try again!.')
+								print('oops! wrong details entered.Try again!.')
 
 						save_credentials(create_credential(user_name,site_name,account_name,password))
 						print('')
