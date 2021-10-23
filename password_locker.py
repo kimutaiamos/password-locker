@@ -52,7 +52,7 @@ def copy_credentials(site_name):
     '''
     copy credentials details to clipboard
     '''
-    return Credential(site_name):
+    return Credential(site_name)
 
 def main():
 	print(' ')
@@ -64,3 +64,17 @@ def main():
 		short_code = input('Enter a choice: ').lower().strip()
 		if short_code == 'EX':
 			break
+
+		elif short_code == 'LO':
+		 print("-"*60)
+		print(' ')
+		print('To login, enter your account details:')
+		user_name = input('Enter your first name - ').strip()
+		password = str(input('Enter your password - '))
+		user_exists = verify_user(user_name,password)
+		if user_exists == user_name:
+			print(" ")
+			print(f'Welcome {user_name}.choose an option to continue.')
+			while True:
+				print("-"*60)
+				print('Navcodes: \n CC-Create a Credential \n DC-Display Credentials \n CP-Copy Password \n EX-Exit')
