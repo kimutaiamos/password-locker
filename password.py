@@ -119,7 +119,7 @@ def main():
 						print('Here is a list of credentials')
 						print(' ')
 						for credential in display_credentials(user_name):
-							print(f'site Name:{credential.site_name} -Accoun Name: {credential.account_name} - pasword:{credential.password}')
+							print(f'site Name:{credential.site_name} -Account Name: {credential.account_name} - pasword:{credential.password}')
 							print(' ')
 						else:
 							print(' ')
@@ -134,7 +134,7 @@ def main():
 					print('Wrong option entered.Try again!.')
 			else:
 				print(' ')
-				print('Wrong details entered.Try again or create new Account.')
+				print('Wrong options entered.Try again or create new Account.')
 
 		else:
 			print("-"*60)

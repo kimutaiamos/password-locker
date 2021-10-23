@@ -12,7 +12,7 @@ class TestUser(unittest.TestCase):
 		'''
 		Function to create a user account before each test
 		'''
-		self.new_user = User('Amos','Ng\'ang\'a','pswd100')
+		self.new_user = User('Amos','Ng\'ang\'a','pswd254')
 
 	def test__init__(self):
 		'''
@@ -20,7 +20,7 @@ class TestUser(unittest.TestCase):
 		'''
 		self.assertEqual(self.new_user.first_name,'Amos')
 		self.assertEqual(self.new_user.last_name,'Ng\'ang\'a')
-		self.assertEqual(self.new_user.password,'psd254')
+		self.assertEqual(self.new_user.password,'pswd254')
 
 	def test_save_user(self):
 		'''
@@ -41,7 +41,7 @@ class TestCredentials(unittest.TestCase):
 		'''
 		self.new_user = User('Amos','Ng\'ang\'a','pswd254')
 		self.new_user.save_user()
-		user2 = User('Kenn','Ng\'ang\'a','psw256')
+		user2 = User('Kenn','Ng\'ang\'a','pswd256')
 		user2.save_user()
 
 		for user in User.users_list:
