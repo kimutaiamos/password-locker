@@ -48,3 +48,19 @@ def display_credentials(user_name):
         """
         return Credential.display_credentials(user_name)
 
+def copy_credentials(site_name):
+    '''
+    copy credentials details to clipboard
+    '''
+    return Credential(site_name):
+
+def main():
+	print(' ')
+	print('Welcome to Password Locker.')
+	while True:
+		print(' ')
+		print("-"*60)
+		print('Use these codes to navigate: \n CA-Create an Account \n LO-Log In \n EX-Exit')
+		short_code = input('Enter a choice: ').lower().strip()
+		if short_code == 'EX':
+			break
