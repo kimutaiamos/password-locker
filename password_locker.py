@@ -1,5 +1,5 @@
 import pyperclip
-from user_credentials import User, Credential
+from user_credentials import User, Credential, save_credentials
 
 def create_user(fname,lname,password):
 	'''
@@ -126,7 +126,7 @@ def main():
 				elif short_code == 'CO':
 					print(' ')
 					chosen_date = input('Enter the site name for the credential password to CO: ')
-					copy_credentials(chosen_site)
+					copy_credentials()
 					print(' ')
 				else:
 					print('Wrong option entered.Try again!.')

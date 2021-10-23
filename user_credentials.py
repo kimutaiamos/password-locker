@@ -64,7 +64,7 @@ def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase
     """
     function to generate password
     """
-    gen_pass=''.join(random.choice(char) for _inrange(size))
+    gen_pass=''.join(random.choice(char) for _ in range(size))
     return gen_pass
 
 def display_credentials(cls,user_name):
