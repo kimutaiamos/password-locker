@@ -123,5 +123,24 @@ def main():
 							print(' ')
 							print("looks like you have no credentials yet")
 							print(' ')
+				elif short_code == 'CO':
+					print(' ')
+					chosen_date = input('Enter the site name for the credential password to CO: ')
+					copy_credentials(chosen_site)
+					print(' ')
+				else:
+					print('Wrong option entered.Try again!.')
+			else:
+				print(' ')
+				print('Wrong details entered.Try again or create new Account.')
+
+		else:
+			print("-"*60)
+			print(' ')
+			print('Wrong option entered.Try again!. ')
+
+if __name__ == '__main__':
+	main()
+				         
 				
 			
