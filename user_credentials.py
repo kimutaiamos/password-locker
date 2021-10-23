@@ -44,4 +44,42 @@ def check_user(cls,first_name,password):
         if(user.first_name == first_name and user.password == password):
             current_user = user.first_name
             return current_user
-            
+
+def _init_(self,user_name,site_name,account_name,password):
+    """
+    method define properties for each user object will hold
+    """
+    self.username = user_name
+    self.site_name = site_name
+    self.account_name = account_name
+    self.password = password
+
+def save_credentials(self):
+    """
+    function to save a new user instance
+    """
+    credential.credentials_list.append(self)
+
+def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
+    """
+    function to generate password
+    """
+    gen_pass=''.join(random.choice(char) for _inrange(size))
+    return gen_pass
+
+def display_credentials(cls,user_name):
+    """
+    class method to display the list of credentials saved
+    """
+    user_credentials_list = []
+    for credential in cls.credentials_list:
+        if credential.user_name == user_name:
+            user_credentials_list.append(credential)
+            return user_credentials_list
+
+
+def copy_credentials(cls,site_name):
+    """
+    method that takes site that takes in sites name
+    """
+    
