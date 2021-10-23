@@ -78,3 +78,9 @@ def main():
 			while True:
 				print("-"*60)
 				print('Navcodes: \n CC-Create a Credential \n DC-Display Credentials \n CP-Copy Password \n EX-Exit')
+				short_code = input('Enter a choice: ').lower().strip()
+				print("-"*60)
+				if short_code == 'EX':
+					print(" ")
+					print(f'Goodbye {user_name}')
+					break
