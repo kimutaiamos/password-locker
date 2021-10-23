@@ -105,8 +105,23 @@ def main():
 							elif psw_choice == 'EX':
 								break
 							else:
-								print('ERROR!'Wrong details entered.Try again!.)
-								save_credential(create_credential(user_name,site_name,account_name,password))
+								print('ERROR! wrong details entered.Try again!.')
+
+						save_credentials(create_credential(user_name,site_name,account_name,password))
+						print('')
+						print(f'credential created: site Name:{site_name} - Account Name:{account_name} -password: {password}')
 						print(' ')
-						print(f'Credential Created: Site Name: {site_name} - Account Name: {account_name} - Password: {password}')
+				elif short_code == 'DC':
+					print(' ')
+					if display_credentials(user_name):
+						print('Here is a list of credentials')
 						print(' ')
+						for credential in display_credentials(user_name):
+							print(f'site Name:{credential.site_name} -Accoun Name: {credential.account_name} - pasword:{credential.password}')
+							print(' ')
+						else:
+							print(' ')
+							print("looks like you have no credentials yet")
+							print(' ')
+				
+			
