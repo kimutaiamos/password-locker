@@ -21,7 +21,8 @@ As a user I would like:
 | Display prompt for creating an account | **Enter: ca** | Enter your first name, last name and password |
 | Display prompt for login in | **Enter: li** | Enter your account name and password |
 |dispay prompt for credentials|*enter :dc**|show credentials|
-
+| Display prompt for which credential to copy | **Enter: copy** | Enter the site name of the credential you wish to copy. |
+| Exit application | **Enter: ex** | Exit the current navigation stage |
 ## SetUp / Installation Requirements
 ### Prerequisites
 * python3.9
