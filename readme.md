@@ -20,7 +20,7 @@ As a user I would like:
 | Display codes for navigation | **In terminal: $./password_locker.py** | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
 | Display prompt for creating an account | **Enter: ca** | Enter your first name, last name and password |
 | Display prompt for login in | **Enter: li** | Enter your account name and password |
-|dispay prompt for credentials|*enter :dc**|
+|dispay prompt for credentials|*enter :dc**|show credentials|
 
 ## SetUp / Installation Requirements
 ### Prerequisites
