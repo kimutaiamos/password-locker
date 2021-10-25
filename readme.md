@@ -49,6 +49,11 @@ As a user I would like:
         
 ## Technologies Used
 * Python3.9
-## License
-MIT &copy;2021
+### License
+[License](./license)
+### contributing
+our website is build with little knowledge in the three language,it is however,open to anyone who would wish to contribute to our project.
+you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests.
+software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
+###copyright @ 2021
 
